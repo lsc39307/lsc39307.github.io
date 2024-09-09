@@ -1,0 +1,23 @@
+
+#top{background-color: red;
+height: 200px;
+width: 200px;
+position: relative;
+z-index: 1;}
+
+#middle{background-color:green;
+height: 200px;
+width: 200px;
+position: absolute;
+left: 100px;
+top: 100px;
+z-index: 2;}
+
+#bottom{background-color: blue;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    z-index: 3;}
+
