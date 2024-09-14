@@ -1,11 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> <h1>Exploring Central PA</h1>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise3</title>
+    <style>
+        body {
+            background-color: darkgray;
+        }
+        #main{
+            margin: 40px auto;
+            width: 1440px;
+            background-color: lightgray;
+            padding: 50px,50px;
+        }
+        div{
+            min-height: 300px;
+        }
+        .equal-columns{
+            display: flex;
+        }
+        .equal-columns > div{
+            flex-basis: 100%;
+        }
+        .col1,
+        .col2{
+            width: 567px;
+            min-height: 300px;
+            background-color: white;
+            border: 5px solid lightgrey;
+            
+        }
+   
+        img.picture1,
+        img.picture2,
+        img.picture3,
+        img.picture4,
+        img.picture5,
+        img.picture6,
+        img.picture7,
+        img.picture8,
+        img.picture9,
+        img.picture10{
+            padding-top: 42px;
+            padding-bottom: 42px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1{text-align: center;
+        margin: 21px auto;
+    }
+    </style>
 </head>
 <body>
-    
+    <div id="main">
+        <div class="equal-columns">
+            <div class="col1">
+                <img class="picture1" src="https://placehold.co/453x370" alt="">
+                <img class="picture2" src="https://placehold.co/453x370" alt="">
+                <img class="picture3" src="https://placehold.co/453x370" alt="">
+                <img class="picture4" src="https://placehold.co/453x370" alt="">
+                <img class="picture5" src="https://placehold.co/453x370" alt="">
+                <img class="picture6" src="https://placehold.co/453x370" alt="">
+                <img class="picture7" src="https://placehold.co/453x370" alt="">
+                <img class="picture8" src="https://placehold.co/453x370" alt="">
+                <img class="picture9" src="https://placehold.co/453x370" alt="">
+                <img class="picture10" src="https://placehold.co/453x370" alt="">
+            </div>
+            <div class="col2">Copy</div>
+        </div>
+    </div>
 </body>
 </html>
