@@ -58,6 +58,7 @@ h2{
 a{
     color: #6b73b6;
     max-width: 300px;
+    margin: 0 auto;
 }
 .col1{
     padding-left: 59px;
