@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Practice</title>
+    <style>
+        div{
+            max-width: 1000px;
+            background-color: rgb(9, 9, 239);
+            margin: 0 auto;
+        }
+        body {
+  background-color: rgb(101, 101, 59);
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    background-color: lightblue;
+  }
+}
+@media screen and (max-width:800px){
+    div {
+        background-color: rgb(6, 37, 6);
+        color: aliceblue;
+        max-width: 50%;
+    }
+}
+img{
+    max-width: 800px;
+}
+@media screen and (max-width: 800px) {
+    img{
+        max-width: 65%;
+        animation: ease-in;
+    }
+}
+    </style>
+</head>
+<body>
+<main id="container">
+    <h1>Media Query Attempt</h1>
+    <div class="body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti error illo sint earum quaerat eum libero ex nihil dicta vero natus praesentium illum, ipsum hic aut accusantium a quasi tempora consequuntur quia soluta in maxime quidem. Ipsum inventore aut modi.</p>
+   <div class="images"><img class="central" alt="central" src="/images/central.jpg.jpg"></div>
+    </div>
+</main>
+</body>
+</html>
