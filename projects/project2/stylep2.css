@@ -72,12 +72,8 @@ img {
       display: block;
       text-align: left;
     }
-  }
-
-  @media screen and (max-width: 767px) {
-    .container {
-      width: 45%;
-      height: 45%;
+    h1 {
+      font-size: auto;
     }
   }
 
