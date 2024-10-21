@@ -72,8 +72,17 @@ img {
       display: block;
       text-align: left;
     }
+  }
+
+  @media (max-width: 767px) {
+    .h3 {
+      font-size: 12px;
+    }
+    h2 {
+      font-size: 24px;
+    }
     h1 {
-      font-size: auto;
+      font-size: 40px;
     }
   }
 
