@@ -79,6 +79,14 @@ img.bookpage {
     max-width: 471px;
     max-height: 518px;
 }
+img.lc {
+    max-width: 482px;
+    max-height: 490px;
+}
+
+.container {
+    margin: auto;
+}
 
 .hero {
     padding: 113px 70px 70px 70px;
@@ -99,6 +107,33 @@ img.bookpage {
     padding: 100px;
     display: inline-block;
 }
+.a-text {
+    margin: auto;
+    justify-content: center;
+    max-width: 685px;
+    padding-top: 53px;
+}
+.a-top {
+    padding-top: 53px;
+    padding-bottom: 53px;
+}
+.a-left,.a-middle,.a-right {
+    max-width: 33%;
+    margin: 0 auto;
+}
+.a-bottom {
+    display: flex;
+}
+.a-b-left,.a-b-right {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+img.alice {
+    max-width: 400px;
+    max-height: 687px;
+}
+
 .scroll-title {
     margin: auto;
     max-width: 680px;
