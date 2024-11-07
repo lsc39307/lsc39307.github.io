@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: FormaBannerBold;
+    src: url(/fonts/FormaDJRBanner-Bold-Edu.otf);
+}
+@font-face {
+    font-family: FormaBannerBlack;
+    src: url(/fonts/FormaDJRBannerNarrow-Black-Edu.otf);
+}
+@font-face {
+    font-family: FormaBannerRegular;
+    src: url(/fonts/FormaDJRBanner-Regular-Edu.otf);
+}
+@font-face {
+    font-family: FormaDeckRegular;
+    src: url(/fonts/FormaDJRDeck-Regular-Edu.otf);
+}
+
+body {
+    background-color: #D8D3B5;
+}
+
+h1 {
+    font-family: FormaBannerBlack;
+    font-display: normal;
+    font-size: 96px;
+    color: #0B1411;
+}
+h2 {
+    font-family: FormaBannerBlack;
+    font-display: normal;
+    font-size: 64px;
+    color: #0B1411;
+}
+h3 {
+    font-family: FormaBannerBold;
+    font-display: normal;
+    font-size: 24px;
+    color: #0B1411;
+}
+h4 {
+    font-family: FormaBannerBold;
+    font-display: normal;
+    font-size: 32px;
+    color: #0B1411;
+}
+p {
+    font-family: FormaDeckRegular;
+    font-display: normal;
+    font-size: 24px;
+    color: #0B1411;
+}
+
+button {
+    width: 198px;
+    height : 46px;
+    background-color: #0B1411;
+    border: 3px solid #000;
+    color: #D8D3B5;
+    font-size: 20px;
+    font-family: FormaDeckRegular;
+    margin-top: 113px;
+}
+button:hover {
+    background-color: #EEC754;
+    color: #0B1411;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+img.bookpage {
+    max-width: 471px;
+    max-height: 518px;
+}
+
+.hero {
+    padding: 113px 70px 70px 70px;
+    display: flex;
+}
+.left-column {
+    padding-right: 25px;
+    max-width: 50%;
+}
+.right-column {
+    max-width: 50%;
+}
+.home-scroll {
+    display: flex;
+}
+.left,.middle,.right {
+    max-width: 33.33%;
+    padding: 100px;
+    display: inline-block;
+}
+.scroll-title {
+    margin: auto;
+    max-width: 680px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #0B1411;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.nav-links a {
+    color: #D8D3B5;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: FormaBannerRegular;
+}
+
+.logo img{
+max-width: 440px;
+max-height: 45px
+}
+
+.burger {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: #0B1411;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .nav-active {
+        transform: translateX(0);
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .nav-links li {
+        animation: navLinkFade 0.5s ease forwards 0.5s;
+    }
+}
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+.nav-links a:focus,
+.nav-links a:hover {
+    color: #EEC754;
+}
+.menu-backdrop {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0B1411(0, 0, 0, 0.5);
+    z-index: 9; /* Ensure it's below the nav-links but above other content */
+}
+.fixed-position {
+    overflow: hidden;
+    height: 100%;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #0B1411(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #0B1411;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
