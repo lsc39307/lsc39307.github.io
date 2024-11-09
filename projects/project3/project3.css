@@ -54,6 +54,7 @@ p {
     font-display: normal;
     font-size: 24px;
     color: #0B1411;
+    padding: 10px;
 }
 
 button {
@@ -128,7 +129,12 @@ img.lc {
     max-width: 50%;
     margin: 0 auto;
 }
-
+.r-left {
+    max-width: 50%;
+}
+.r-right {
+    max-width: 50%;
+}
 img.alice {
     max-width: 400px;
     max-height: 687px;
