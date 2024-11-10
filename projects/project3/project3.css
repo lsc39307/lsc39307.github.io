@@ -65,7 +65,6 @@ button {
     color: #D8D3B5;
     font-size: 20px;
     font-family: FormaDeckRegular;
-    margin-top: 113px;
 }
 button:hover {
     background-color: #EEC754;
@@ -138,6 +137,10 @@ img.lc {
 img.alice {
     max-width: 400px;
     max-height: 687px;
+}
+
+.buy-left,.buy-right {
+    max-width: 50%;
 }
 
 .scroll-title {
@@ -272,4 +275,19 @@ max-height: 45px
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        display: block;
+    }
+    .home-scroll {
+        display: block;
+    }
+    .scroll-title {
+        display: block;
+    }
+    .left,.middle,.right {
+        display: block;
+    }
 }
