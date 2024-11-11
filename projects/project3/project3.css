@@ -54,7 +54,7 @@ p {
     font-display: normal;
     font-size: 24px;
     color: #0B1411;
-    padding: 10px;
+    padding: 10px 0px 10px 0px;
 }
 
 button {
@@ -67,8 +67,12 @@ button {
     font-family: FormaDeckRegular;
 }
 button:hover {
-    background-color: #EEC754;
+    background-color: #C15C55;
     color: #0B1411;
+}
+button a {
+    color: #D8D3B5;
+    text-decoration: none;
 }
 
 img {
@@ -228,6 +232,18 @@ max-height: 45px
         animation: navLinkFade 0.5s ease forwards 0.5s;
     }
 }
+
+.menu-backdrop {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0B1411(0, 0, 0, 0.5);
+    z-index: 9; /* Ensure it's below the nav-links but above other content */
+}
+
 .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -242,16 +258,6 @@ max-height: 45px
 .nav-links a:focus,
 .nav-links a:hover {
     color: #EEC754;
-}
-.menu-backdrop {
-    display: none; /* Hidden by default */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #0B1411(0, 0, 0, 0.5);
-    z-index: 9; /* Ensure it's below the nav-links but above other content */
 }
 .fixed-position {
     overflow: hidden;
@@ -277,6 +283,10 @@ max-height: 45px
     display: block;
 }
 
+a.active {
+    color: #EEC754;
+}
+
 @media screen and (max-width: 768px) {
     .hero {
         display: block;
@@ -289,5 +299,59 @@ max-height: 45px
     }
     .left,.middle,.right {
         display: block;
+        max-width: 100%;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .b.text,.b.buttons,.b.body,.b.right {
+        display: block;
+    }
+    img.alice {
+        display: none;
+    }
+}
+
+.a-top {
+    display: flex;
+}
+@media screen and (max-width: 768px) {
+    .a-top,.a-left,.a-middle,.a-right,.a-b-left,.a-b-right,.a-bottom {
+        display: block;
+    }
+}
+
+.r-container {
+    padding: 113px 53px 113px 53px;
+    display: flex;
+    margin: 0 auto;
+}
+.r-left,.r-right {
+    display: flex;
+}
+.r-table {
+    padding: 53px 0px 53px 0px;
+}
+@media screen and (max-width: 768px) {
+    .r-left,.r-right {
+        display: block;
+    }
+    .r-right {
+        padding-top: 400px;
+    }
+}
+
+.amazon,.walmart {
+max-height: 44px;
+max-width: 180px;
+}
+.left-column {
+    padding-right: 53px;
+}
+
+@media screen and (max-width: 768px) {
+    .buy-container {
+        display: block;
+    }
+}
+
