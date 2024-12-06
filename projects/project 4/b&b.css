@@ -8,7 +8,7 @@ h1{
 }
 
 .topnav {
-    background-color: #333;
+    background-image: url(/images/wavyness-color.jpg);
     overflow: hidden;
   }
   
@@ -16,24 +16,23 @@ h1{
   .topnav a {
     float: right;
     display: block;
-    color: #f2f2f2;
+    color: #112932;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 24px;
+    font-family: All Round Gothic Bold;
   }
 
   
   /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    text-decoration: underline;
   }
   
   /* Add an active class to highlight the current page */
   .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
+    text-decoration: underline;
   }
   
   /* Hide the link that should open and close the topnav on small screens */
