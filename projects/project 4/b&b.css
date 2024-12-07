@@ -2,9 +2,44 @@
     font-family: All Round Gothic Bold;
     src: url(/fonts/FONTSPRING-DEMO-ALLROUNDGOTHIC-BOLD.OTF);
 }
+@font-face {
+  font-family: All Round Gothic Book;
+  src: url(/fonts/FONTSPRING-DEMO-ALLROUNDGOTHIC-BOOK.OTF);
+}
 
 h1{
     font-family: All Round Gothic Bold;
+    font-size: 71.66px;
+    color: #112932;
+}
+h2{
+  font-family: All Round Gothic Bold;
+  font-size: 59.72px;
+  color: #112932;
+}
+h3{
+  font-family: sans-serif;
+  font-size: 32px;
+  font-display: bold;
+  color: #112932;
+}
+h4{
+  font-family: All Round Gothic Bold;
+  font-size: 28.8px;
+  color: #112932;
+  margin: 0 auto;
+}
+h5{
+  font-family: sans-serif;
+  font-size: 28.8px;
+  font-weight: normal;
+  margin: 0 auto;
+  color: #112932;
+}
+p{
+  font-family: sans-serif;
+  font-size: 24px;
+  color: #112932;
 }
 
 .topnav {
@@ -44,7 +79,7 @@ h1{
     float: left;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 767px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -52,7 +87,7 @@ h1{
     }
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 767px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
       position: absolute;
@@ -65,3 +100,145 @@ h1{
       text-align: left;
     }
   }
+
+button{
+  border-radius: 10%;
+  background-image: url(/images/wavyness-color.jpg);
+  border: none;
+  font-family: All Round Gothic Bold;
+  font-size: 24px;
+  color: #112932;
+}
+ 
+ 
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+  img.hero{
+    opacity: .2;
+  }
+
+  div.hero{
+    position: relative;
+    text-align: center;
+    color: #112932;
+  }
+  div.centered {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: All Round Gothic Bold;
+    font-size: 71.66px;
+  }
+  div.sub-centered{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: All Round Gothic Book;
+    font-size: 59.72px;
+  }
+  div.overlays{
+    position: relative;
+  }
+  div.about{
+    position: absolute;
+    top: 70%;
+    max-width: 554px;
+    margin-left: 20px;
+  }
+  img.foody{
+    position: absolute;
+    top: -20%;
+    left: 68.5%;
+}
+img.fourcups{
+  position: relative;
+  top: 150%;
+  left:50%
+}
+
+div.menu{
+  margin-left: 20px;
+}
+div.cards{
+  display: flex;
+  margin: auto;
+  width: 70%;
+}
+div.card p {
+  margin: -20px;
+}
+.card1,.card2,.card3,.card4{
+  max-width: 273px;
+  background-image: url(/images/wavyness-color.jpg);
+  text-align: center;
+  margin-right: 40px;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+img.espresso{
+  margin: 25px;
+}
+
+div.schedule{
+  margin-left: 20px;
+  margin-bottom: 100px
+}
+
+footer{
+  display: flex;
+  margin: auto;
+  width: 100%;
+  background-image: url(/images/wavyness-color.jpg);
+  justify-content: space-evenly;
+}
+ul{
+  list-style-type: none;
+}
+li{
+  font-family: sans-serif;
+  font-size: 24px;
+  margin: 10px;
+}
+footer h4{
+  padding: 20px;
+}
+
+div.leftcolumn{
+  max-width: 689px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.about-container{
+  display: flex;
+}
+div.rightcolumn{
+  max-width: 730px;
+  position: relative;
+}
+img.steamy{
+  position:absolute;
+  top: 20%;
+  right: 5%;
+}
+img.shop{
+  position: relative;
+  top: -20%;
+  right: -5%;
+}
+img.wall{
+  padding-bottom: 50px;
+}
+img.couple{
+  padding-top: 50px;
+}
+img.menucover{
+  opacity: .2;
+}
+
+
