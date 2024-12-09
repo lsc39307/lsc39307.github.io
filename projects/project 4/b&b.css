@@ -108,6 +108,8 @@ button{
   font-family: All Round Gothic Bold;
   font-size: 24px;
   color: #112932;
+  max-width: 100%;
+  height: auto;
 }
  
  
@@ -159,6 +161,8 @@ img.fourcups{
   top: 150%;
   left:50%
 }
+
+div.leftcolumn
 
 div.menu{
   margin-left: 20px;
@@ -217,9 +221,13 @@ div.leftcolumn{
 .about-container{
   display: flex;
 }
-div.rightcolumn{
+div.about-rightcolumn{
   max-width: 730px;
   position: relative;
+}
+div.about-leftcolumn{
+  width: 45%;
+  padding-right: 100px;
 }
 img.steamy{
   position:absolute;
@@ -267,3 +275,84 @@ div.schedule-rightcolumn{
   width: fit-content;
 }
 
+.menu-container{
+  display: flex;
+}
+
+.menu-leftcolumn,.menu-rightcolumn{
+  padding: 100px;
+}
+
+.menu-left-left,.menu-left-right,.menu-right-left,.menu-right-right{
+  display: inline-block;
+}
+
+@media screen and (max-width: 1200px) {
+  div.centered{
+    font-size: 55px;
+  }
+  div.sub-centered{
+    font-size: 50px;
+  }
+ }
+
+@media screen and (max-width:767px) {
+  div.centered{
+    font-size: 30px;
+  }
+  div.sub-centered{
+    font-size: 30px;
+  }
+  div.overlays{
+    display: none;
+  }
+  div.container{
+    display: block;
+  }
+  div.about{
+    position: relative;
+  }
+  h1{
+    font-size: 36px;
+  }
+  h4{
+    font-size: 24px;
+  }
+  p{
+    font-size: 16px;
+  }
+  div.cards{
+    display: block;
+    width: 100%;
+  }
+  footer{
+    display: inline-flexbox;
+    li {
+      font-size: 16px;
+    }
+  }
+  div.about-container{
+    display: block;
+    width: 100%;
+  }
+  div.about-leftcolumn{
+    width: 100%;
+    margin: 20px;
+    padding: 0px;
+  }
+  div.about-rightcolumn img{
+    max-width: 100%;
+    height: auto;
+  }
+  
+}
+
+@media screen and (max-width:747px) {
+  div.centered{
+    font-size: 24px;
+  }
+  div.sub-centered{
+    font-size: 20px;
+    width: 100%;
+  }
+}
