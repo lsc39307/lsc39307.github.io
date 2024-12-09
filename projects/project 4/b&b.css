@@ -297,6 +297,8 @@ div.schedule-rightcolumn{
 
 .menu-container{
   display: flex;
+  width: 70%;
+  margin: auto;
 }
 .menu-leftcolumn,.menu-rightcolumn{
   width: 50%;
