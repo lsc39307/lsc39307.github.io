@@ -198,10 +198,27 @@ div.schedule{
 
 footer{
   display: flex;
-  margin: auto;
   width: 100%;
   background-image: url(/images/wavyness-color.jpg);
   justify-content: space-evenly;
+}
+footer li {
+  color: #112932;
+}
+
+li a {
+  text-decoration: none;
+  color: #112932;
+}
+
+li a:hover{
+  text-decoration: underline;
+}
+div.contact-info,div.navigate,div.follow-us,.div.legal{
+  width: 25%;
+}
+div.copyright{
+  background-image: url(/images/wavyness-color.jpg);
 }
 ul{
   list-style-type: none;
