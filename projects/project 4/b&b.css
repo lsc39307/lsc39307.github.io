@@ -270,7 +270,7 @@ div.schedule-rightcolumn{
   width: 30%;
 }
 
-.columns{
+.contact-columns{
   margin: auto;
   width: fit-content;
 }
@@ -278,13 +278,26 @@ div.schedule-rightcolumn{
 .menu-container{
   display: flex;
 }
-
 .menu-leftcolumn,.menu-rightcolumn{
-  padding: 100px;
+  width: 50%;
+}
+.menu-leftcolumn,.menu-rightcolumn ul{
+  font-size: 36px;
+  font-family: All Round Gothic Bold;
+  color: #112932;
 }
 
-.menu-left-left,.menu-left-right,.menu-right-left,.menu-right-right{
-  display: inline-block;
+.signature{
+  display: flex;
+}
+.signature ul{
+  width: 650px;
+  
+}
+.prices {
+  margin: auto;
+  position: relative;
+  padding-top: 45px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -344,7 +357,22 @@ div.schedule-rightcolumn{
     max-width: 100%;
     height: auto;
   }
-  
+  div.contact-columns{
+    display: block;
+  }
+div.schedule-container{
+  display: block;
+  margin: auto;
+}
+div.schedule-rightcolumn{
+  padding-top: 0px;
+}
+.menu-container{
+  display: block;
+}
+.prices{
+  margin: auto;
+}
 }
 
 @media screen and (max-width:747px) {
